@@ -1,7 +1,19 @@
-body{
-    background-color: #688c57;
+:root {
+    --padding-large: 50px;
+    --padding-medium: 30px;
+    --padding-small: 15px;
+    --grid-gap-large: 30px;
+    --grid-gap-medium: 20px;
+    --grid-gap-small: 10px;
 }
-header,footer{
+
+body {
+    background-color: #688c57;
+    padding-left: var(--padding-large);
+    padding-right: var(--padding-large);
+}
+
+header, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,25 +21,52 @@ header,footer{
     border-radius: 20px;
     background-color: #477248;
     box-shadow: 0 4px 8px;
+    /* Aplica spațierea laterală */
+    margin-left: var(--padding-large);
+    margin-right: var(--padding-large);
 }
-p{
+
+p {
     color: #f7c477;
     padding-left: 20px;
     padding-right: 20px;
 }
-h2,h3{
+
+h2, h3 {
     color: #f9f0d8;
     padding-left: 20px;
     padding-right: 20px;
 }
-h1{
+
+h1 {
     color: #f9f0d8;
     padding-left: 300px;
     padding-right: 300px;
 }
-img{
+
+img {
     width: 100%;
     max-width: 600px;
     min-width: 150px;
     height: auto;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: var(--grid-gap-large);
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --padding-large: var(--padding-medium);
+        --grid-gap-large: var(--grid-gap-medium);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --padding-large: var(--padding-small);
+        --grid-gap-large: var(--grid-gap-small);
+    }
 }
