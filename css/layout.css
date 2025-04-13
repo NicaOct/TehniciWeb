@@ -1,0 +1,79 @@
+main {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+#zona1 {
+    grid-area: zona1;
+}
+
+#zona2 {
+    grid-area: zona2;
+}
+
+#zona3 {
+    grid-area: zona3;
+}
+
+#zona4 {
+    grid-area: zona4;
+}
+
+#zona5 {
+    grid-area: zona5;
+}
+
+#zona6 {
+    grid-area: zona6;
+}
+
+#zona7 {
+    grid-area: zona7;
+}
+
+#zona8 {
+    grid-area: zona8;
+}
+
+/* ecran mare */
+@media (min-width: 1025px) {
+    main {
+        grid-template-areas:
+            "zona1 zona1 zona1"
+            "zona5 zona6 zona7"
+            "zona3 zona2 zona2"
+            "zona4 zona2 zona2"
+            "zona8 zona8 zona8";
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+/* ecran mediu */
+@media (max-width: 1024px) and (min-width: 601px) {
+    main {
+        grid-template-areas:
+            "zona1 zona1"
+            "zona5 zona6"
+            "zona7 zona3"
+            "zona2 zona2"
+            "zona4 zona8";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ecran mic */
+@media (max-width: 600px) {
+    main {
+        grid-template-areas:
+            "zona1"
+            "zona5"
+            "zona6"
+            "zona7"
+            "zona3"
+            "zona2"
+            "zona4"
+            "zona8";
+        grid-template-columns: 1fr;
+    }
+}

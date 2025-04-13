@@ -6,48 +6,74 @@
     --grid-gap-medium: 20px;
     --grid-gap-small: 10px;
     --padding-zone: 20px;
+    --color-background: #1A1A1D;
+    --color-background2: #A34343;
+    --color-highlight: #AF8BAF;
+    --color-border: #3B1C32;
+    --color-title: #FBF5E5;
+    --color-subtitle: #88304E;
+    --color-text: #522546;
 }
 
 body {
-    background-color: #688c57;
+    background-color: var(--color-background);
     padding-left: var(--padding-large);
     padding-right: var(--padding-large);
 }
+header{
+    grid-area: zona1;
+    background-image: url('../resurse/imagini/abasi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-title);
+    text-align: center;
+    padding: var(--padding-large);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--color-background2);
+    box-shadow: 0 4px 8px;
+    border: 2px solid var(--color-border);
+    margin-left: var(--padding-large);
+    margin-right: var(--padding-large);
+}
 
-header, footer {
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--padding-zone);
     border-radius: 20px;
-    background-color: #477248;
+    background-color: var(--color-highlight);
     box-shadow: 0 4px 8px;
-    border: 2px solid #355a35;
+    border: 2px solid var(--color-border);
     margin-left: var(--padding-large);
     margin-right: var(--padding-large);
 }
 
 main section{
-    background-color: #c6a477;
+    background-color: var(--color-highlight);
     border-radius: 15px;
-    border: 2px solid #daf7a6;
+    border: 2px solid var(--color-border);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: var(--padding-large);
     padding: var(--padding-zone);
 }
 
 p {
-    color: #f7c477;
+    color: var(--color-subtitle);
     padding: var(--padding-zone);
 }
 
 h2, h3 {
-    color: #f9f0d8;
+    color: var(--color-text);
     padding: var(--padding-zone);
 }
 
 h1 {
-    color: #f9f0d8;
+    color: var(--color-title);
     padding-left: 300px;
     padding-right: 300px;
 }

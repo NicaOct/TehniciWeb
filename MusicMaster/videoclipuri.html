@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Master</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="chitara, chitare, chitara acustica, chitara electrica, muzica, instrument de muzica, produse muzica, muzicii, magazin muzica, magazina chitara">
+    <meta name="description" content="Magazin online de instrumente muzicale">
+    <meta name="author" content="Nica Octavian-Gabriel">
+    <link rel="icon" type="image/png" href="/resurse/imagini/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/resurse/imagini/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/resurse/imagini/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/resurse/imagini/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/resurse/imagini/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" type="text/css" href="../css/general.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    <style>
+        .patrat-video {
+            width: 1200px;
+            height: 675px;
+            border: 2px solid var(--color-border);
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-background);
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px var(--color-background2);
+        }
+
+        .container-butoane {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: var(--color-highlight);
+            color: var(--color-subtitle);
+            border: 1px solid var(--color-text);
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px var(--color-background2);
+        }
+
+            #video-frame {
+                width: 1200px;
+                height: 675px;
+                border: none;
+            }
+    </style>
+</head>
+<body>
+<div class="container-butoane">
+    <button onclick="playVideo('https://www.youtube.com/embed/yziuNkKsU9E?si=d4uKsb8QtNd9FKiv')">A Thomann Documentar</button>
+    <button onclick="playVideo('https://www.youtube.com/embed/bKJ7pTs_SOE?si=-KA-j8tpJy_2NZ_u')">Meinl Cymbals</button>
+    <button onclick="playVideo('https://www.youtube.com/embed/PkzFN_hc0Gs?si=LcTAlaHvITB6HXbT')">Harley Benton-HSS</button>
+</div>
+
+<div class="patrat-video">
+    <iframe id="video-frame" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<script>
+    function playVideo(url) {
+        document.getElementById('video-frame').src = url;
+    }
+</script>
+</body>
+</html>
