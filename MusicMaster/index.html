@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" type="text/css" href="../css/general.css" />
     <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/table.css" />
 
 </head>
 
@@ -27,6 +28,7 @@
             <li><a href="#zona2">Oferte</a></li>
             <li><a href="#zona3">Ce se întâmplă?</a></li>
             <li><a href="#zona4">Anunțuri</a></li>
+            <li><a href="#sectiune3">Noutăți în muzică</a></li>
         </ul>
     </nav>
 </header>
@@ -34,44 +36,58 @@
     <section id="zona1">
         <h2>Descoperă lumea muzicii cu Music Master!</h2>
         <p>Aici găsești instrumente de calitate și inspirația pentru a-ți începe sau continua călătoria muzicală. Fie că ești pasionat de chitară, tobe sau alte instrumente, avem ceva special pentru tine.</p>
-        <img src="../resurse/imagini/hero-image.jpg" alt="Chitară electrică" style="max-width: 100%;">
     </section>
     <section id="zona2">
         <h2>Oferta noastră specială</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Produs</th>
-                <th>Preț</th>
-                <th>Reducere</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Chitară acustică model clasic</td>
-                <td>350 RON</td>
-                <td>-10%</td>
-            </tr>
-            <tr>
-                <td>Set chitară electrică pentru începători</td>
-                <td>700 RON</td>
-                <td>-15%</td>
-            </tr>
-            <tr>
-                <td>Husă chitară impermeabilă</td>
-                <td>80 RON</td>
-                <td>-5%</td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="table-container">
+            <table>
+                <caption>Oferte Speciale Chitare Electrice</caption>
+                <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Preț</th>
+                    <th>Caracteristici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Simplu Model 1</td>
+                    <td>199 RON</td>
+                    <td>Caracteristica A</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Pachet</td>
+                    <td>349 RON</td>
+                    <td>Chitară + Husă</td>
+                </tr>
+                <tr>
+                    <td>249 RON</td>
+                    <td>Caracteristica B</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Vezi toate ofertele!</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
     <section id="zona3">
         <h2>Calendar Evenimente Muzicale</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </section>
     <section id="zona4">
-        <h2>Anunțuri</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>Noutăți în lumea muzicii</h2>
+        <div class="container-iframe">
+            <iframe name="ifr-video" width="800" height="450" src="https://www.youtube.com/embed/yziuNkKsU9E?si=d4uKsb8QtNd9FKiv" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <div class="taburi-iframe">
+                <a href="https://www.youtube.com/embed/yziuNkKsU9E?si=d4uKsb8QtNd9FKiv" title="A Thomann Documentar" target="ifr-video">Thomann Docu</a>
+                <a href="https://www.youtube.com/embed/bKJ7pTs_SOE?si=-KA-j8tpJy_2NZ_u" title="Meinl Cymbals" target="ifr-video">Meinl Cymbals</a>
+                <a href="https://www.youtube.com/embed/PkzFN_hc0Gs?si=LcTAlaHvITB6HXbT" title="Harley Benton-HSS" target="ifr-video">Harley Benton</a>
+                <br />
+            </div>
+        </div>
     </section>
     <section id="zona5">
         <h2>Utilizatori Online</h2>
@@ -88,11 +104,11 @@
     <section id="zona8">
         <h3>Alte informații utile</h3>
         <p>Bine ai venit în comunitatea Music Master! Explorează instrumentele noastre, descoperă artiști talentați și împărtășește-ți pasiunea pentru muzică.</p>
-        <button onclick="window.open('videoclipuri.html', '_blank')">Vezi videoclipuri muzicale</button>
     </section>
 </main>
 
 <footer>
+    <a href="#" title="mergi sus" id="link-top"><div id="triunghi"></div></a>
     <address>
         <br><br>
 

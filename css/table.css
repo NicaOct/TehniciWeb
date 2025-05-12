@@ -1,0 +1,61 @@
+:root {
+    --padding-large: 40px;
+    --padding-medium: 20px;
+    --padding-small: 10px;
+    --padding-zone: 20px;
+    --padding-border: 5px;
+    --grid-gap-large: 30px;
+    --grid-gap-medium: 20px;
+    --grid-gap-small: 10px;
+    --color-background: #1A1A1D;
+    --color-background2: #A34343;
+    --color-highlight: #AF8BAF;
+    --color-border: #3B1C32;
+    --color-title: #FBF5E5;
+    --color-subtitle: #88304E;
+    --color-text: #522546;
+}
+table {
+    width: 70%;
+    margin: var(--padding-zone) auto;
+    border-collapse: collapse;
+    border: var(--padding-border) double var(--color-background);
+}
+
+caption {
+    text-align: center;
+    font-style: italic;
+    color: var(--color-highlight);
+    margin-top: 0;
+    margin-bottom: var(--padding-small);
+    caption-side: bottom;
+}
+
+th, td {
+    border: 1px solid var(--color-title);
+    padding: var(--padding-small);
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: var(--color-background2);
+    color: var(--color-text);
+}
+
+tbody tr:hover td {
+    border-width: 3px;
+    border-color: var(--color-border);
+    transition: background-color 0.5s ease, color 0.5s ease, border-width 0.5s ease, border-color 0.5s ease;
+}
+
+td:nth-child(even) {
+    color: #5cb85c;
+}
+
+td:nth-child(odd) {
+    color: #d9534f;
+}
