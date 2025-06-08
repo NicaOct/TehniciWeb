@@ -16,21 +16,54 @@
     <link rel="stylesheet" type="text/css" href="../css/general.css" />
     <link rel="stylesheet" type="text/css" href="../css/layout.css" />
     <link rel="stylesheet" type="text/css" href="../css/table.css" />
+    <link rel="stylesheet" href="../css/menu.css">
 
 </head>
 
 <body>
 <header id="sus">
+  <div class="header-container">
     <h1>Music Master</h1>
-    <nav>
+    <input type="checkbox" id="burger-toggle" style="display:none;" />
+    <label id="burger" for="burger-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="navigare">
+      <nav class="navigare_bara_sus">
         <ul>
-            <li><a href="#zona1">Despre noi</a></li>
-            <li><a href="#zona2">Oferte</a></li>
-            <li><a href="#zona3">Ce se întâmplă?</a></li>
-            <li><a href="#zona4">Anunțuri</a></li>
-            <li><a href="#sectiune3">Noutăți în muzică</a></li>
+          <li>
+            <a href="#">Instrumente</a>
+            <ul class="submenu">
+              <li><a href="chitare-electrice.html">Chitare Electrice</a></li>
+              <li><a href="chitare-acustice.html">Chitare Acustice</a></li>
+              <li><a href="bass.html">Chitare Bass</a></li>
+              <li><a href="clape.html">Clape</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Accesorii</a>
+            <ul class="submenu">
+              <li><a href="cabluri.html">Cabluri</a></li>
+              <li><a href="pedale.html">Pedale</a></li>
+              <li><a href="amplificatoare.html">Amplificatoare</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html">Acasă</a>
+            <ul class="submenu">
+              <li><a href="#despre-noi">Despre Noi</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#livrare">Livrare</a></li>
+              <li><a href="#garantie">Garanție</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </div>
 </header>
 <main>
     <section id="zona1">
