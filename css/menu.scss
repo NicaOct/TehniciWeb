@@ -206,6 +206,28 @@ header nav, header > nav {
   box-shadow: none;
 }
 
+/* Ascund bannerul pe ecran */
+.banner-print {
+  display: none;
+}
+
+@media print {
+  .banner-print {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    border: 4px double #000;
+    background: #fff;
+    color: #000;
+    padding: 0.5em 1em;
+    font-size: 1.1em;
+    z-index: 10000;
+    text-align: right;
+  }
+}
+
 // =========================
 // EFECT BARĂ DE ÎNCĂRCARE LA HOVER PE BUTON MENIU
 // =========================
