@@ -7,6 +7,13 @@
     },
     "info_erori": [
         {
+            "identificator": 400,
+            "status": true,
+            "titlu": "Cerere invalidă",
+            "text": "Solicitarea ta nu a putut fi procesată. Verifică adresa URL sau contactează administratorul.",
+            "imagine": "400.png"
+        },
+        {
             "identificator": 404,
             "status": true,
             "titlu": "Pagina nu a fost găsită",

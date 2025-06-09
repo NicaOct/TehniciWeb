@@ -1,86 +1,77 @@
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-    <%- include('../fragmente/head') %>
-</head>
-<body>
-    <%- include('../fragmente/header') %>
-
-    <main>
-        <section id="zona1">
-            <h2>Descoperă lumea muzicii cu Music Master!</h2>
-            <p>Aici găsești instrumente de calitate și inspirația pentru a-ți începe sau continua călătoria muzicală. Fie că ești pasionat de chitară, tobe sau alte instrumente, avem ceva special pentru tine.</p>
-        </section>
-        <section id="zona2">
-            <h2>Oferta noastră specială</h2>
-            <div class="table-container">
-                <table>
-                    <caption>Oferte Speciale Chitare Electrice</caption>
-                    <thead>
-                    <tr>
-                        <th>Model</th>
-                        <th>Preț</th>
-                        <th>Caracteristici</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Simplu Model 1</td>
-                        <td>199 RON</td>
-                        <td>Caracteristica A</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">Pachet</td>
-                        <td>349 RON</td>
-                        <td>Chitară + Husă</td>
-                    </tr>
-                    <tr>
-                        <td>249 RON</td>
-                        <td>Caracteristica B</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Vezi toate ofertele!</td>
-                    </tr>
-                    </tbody>
-                </table>
+<!-- 6. pagina principala index -->
+<%- contentFor('body') %>
+<main>
+    <section id="zona1">
+        <h2>descopera lumea muzicii cu music master!</h2>
+        <p>aici gasesti instrumente de calitate si inspiratia pentru a-ti incepe sau continua calatoria muzicala. fie ca esti pasionat de chitara, tobe sau alte instrumente, avem ceva special pentru tine.</p>
+    </section>
+    <section id="zona2">
+        <h2>oferta noastra speciala</h2>
+        <div class="table-container">
+            <table>
+                <caption>oferte speciale chitare electrice</caption>
+                <thead>
+                <tr>
+                    <th>model</th>
+                    <th>pret</th>
+                    <th>caracteristici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>simplu model 1</td>
+                    <td>199 ron</td>
+                    <td>caracteristica a</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">pachet</td>
+                    <td>349 ron</td>
+                    <td>chitara + husa</td>
+                </tr>
+                <tr>
+                    <td>249 ron</td>
+                    <td>caracteristica b</td>
+                </tr>
+                <tr>
+                    <td colspan="3">vezi toate ofertele!</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="zona3">
+        <h2>calendar evenimente muzicale</h2>
+        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    <section id="zona4">
+        <h2>noutati in lumea muzicii</h2>
+        <div class="container-iframe">
+            <iframe name="ifr-video" width="800" height="450" src="https://www.youtube.com/embed/yziuNkKsU9E?si=d4uKsb8QtNd9FKiv" title="youtube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <div class="taburi-iframe">
+                <a href="https://www.youtube.com/embed/yziuNkKsU9E?si=d4uKsb8QtNd9FKiv" title="a thomann documentar" target="ifr-video">thomann docu</a>
+                <a href="https://www.youtube.com/embed/bKJ7pTs_SOE?si=-KA-j8tpJy_2NZ_u" title="meinl cymbals" target="ifr-video">meinl cymbals</a>
+                <a href="https://www.youtube.com/embed/PkzFN_hc0Gs?si=LcTAlaHvITB6HXbT" title="harley benton-hss" target="ifr-video">harley benton</a>
+                <br />
             </div>
-        </section>
-        <section id="zona3">
-            <h2>Calendar Evenimente Muzicale</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </section>
-        <section id="zona4">
-            <h2>Noutăți în lumea muzicii</h2>
-            <div class="container-iframe">
-                <iframe name="ifr-video" width="800" height="450" src="https://www.youtube.com/embed/yziuNkKsU9E?si=d4uKsb8QtNd9FKiv" title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <div class="taburi-iframe">
-                    <a href="https://www.youtube.com/embed/yziuNkKsU9E?si=d4uKsb8QtNd9FKiv" title="A Thomann Documentar" target="ifr-video">Thomann Docu</a>
-                    <a href="https://www.youtube.com/embed/bKJ7pTs_SOE?si=-KA-j8tpJy_2NZ_u" title="Meinl Cymbals" target="ifr-video">Meinl Cymbals</a>
-                    <a href="https://www.youtube.com/embed/PkzFN_hc0Gs?si=LcTAlaHvITB6HXbT" title="Harley Benton-HSS" target="ifr-video">Harley Benton</a>
-                    <br />
-                </div>
-            </div>
-        </section>
-        <section id="zona5">
-            <h2>Utilizatori Online</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
-        <section id="zona6">
-            <h2>Date Utilizator și Statistici</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </section>
-        <section id="zona7">
-            <h2>Date Site și Server</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-        <section id="zona8">
-            <h3>Alte informații utile</h3>
-            <p>Bine ai venit în comunitatea Music Master! Explorează instrumentele noastre, descoperă artiști talentați și împărtășește-ți pasiunea pentru muzică.</p>
-        </section>
-    </main>
-
-    <%- include('../fragmente/footer') %>
-</body>
-</html> 
+        </div>
+    </section>
+    <section id="zona5">
+        <h2>utilizatori online</h2>
+        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+    <section id="zona6">
+        <h2>date utilizator si statistici</h2>
+        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p><strong>ip utilizator:</strong> <%= userIP %></p>
+    </section>
+    <section id="zona7">
+        <h2>date site si server</h2>
+        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <section id="zona8">
+        <h3>alte informatii utile</h3>
+        <p>bine ai venit in comunitatea music master! exploreaza instrumentele noastre, descopera artisti talentati si impartaseste-ti pasiunea pentru muzica.</p>
+    </section>
+</main> 
