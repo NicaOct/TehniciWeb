@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <%- include('../fragmente/head') %>
+    <title>Despre Noi | Music Master</title>
+    <style>
+        .despre-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .despre-section {
+            margin-bottom: 3rem;
+        }
+        .despre-section h2 {
+            color: var(--color-background2);
+            margin-bottom: 1rem;
+        }
+        .despre-section p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .despre-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .despre-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .despre-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .despre-card h3 {
+            color: var(--color-background2);
+            margin-bottom: 0.5rem;
+        }
+        .despre-card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <%- include('../fragmente/header') %>
+
+    <main>
+        <section class="despre-container">
+            <div class="despre-section">
+                <h2>Povestea Noastră</h2>
+                <p>Music Master a început ca o mică pasiune în 2010, când fondatorul nostru, un muzician înrăit, a decis să creeze un spațiu unde muzicienii pot găsi instrumente de calitate și sfaturi profesionale.</p>
+                <p>De-a lungul anilor, am crescut de la un magazin mic la unul dintre cele mai mari distribuitori de instrumente muzicale din România, păstrând în același timp spiritul nostru de familie și dedicarea față de calitate.</p>
+            </div>
+
+            <div class="despre-section">
+                <h2>De Ce Să Ne Alegi</h2>
+                <div class="despre-grid">
+                    <div class="despre-card">
+                        <img src="/resurse/imagini/calitate.jpg" alt="Calitate">
+                        <h3>Calitate Garantată</h3>
+                        <p>Toate instrumentele noastre sunt testate și verificate de experți înainte de a ajunge la tine.</p>
+                    </div>
+                    <div class="despre-card">
+                        <img src="/resurse/imagini/servicii.jpg" alt="Servicii">
+                        <h3>Servicii Complete</h3>
+                        <p>Oferim servicii de mentenanță, reparații și consultanță pentru toate instrumentele muzicale.</p>
+                    </div>
+                    <div class="despre-card">
+                        <img src="/resurse/imagini/experienta.jpg" alt="Experiență">
+                        <h3>Experiență de Peste 10 Ani</h3>
+                        <p>Cu o experiență vastă în domeniu, suntem partenerii tăi de încredere în lumea muzicii.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="despre-section">
+                <h2>Misiunea Noastră</h2>
+                <p>Ne propunem să facem muzica accesibilă tuturor, oferind instrumente de calitate la prețuri corecte și asigurând suportul necesar pentru a te ajuta să-ți atingi potențialul muzical.</p>
+                <p>Credem că fiecare persoană merită să aibă acces la instrumente muzicale de calitate, indiferent de nivelul său de experiență sau buget.</p>
+            </div>
+        </section>
+    </main>
+
+    <%- include('../fragmente/footer') %>
+</body>
+</html> 

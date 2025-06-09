@@ -22,7 +22,7 @@ body {
 }
 header{
     grid-area: zona1;
-    background-image: url('../resurse/imagini/abasi.jpg');
+    background-image: url('/resurse/imagini/abasi.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <%- include('../fragmente/head') %>
+    <title>Contact | Music Master</title>
+</head>
+<body>
+    <%- include('../fragmente/header') %>
+
+    <main>
+        <section id="contact">
+            <h1>Contact</h1>
+            <div class="contact-info">
+                <h2>Informații de contact</h2>
+                <p>Telefon: <a href="tel:+40746686817">+40 746 686 817</a></p>
+                <p>Adresă: <a href="https://maps.google.com/?q=Facultatea+de+Matematica+si+Informatica" target="_blank">
+                    Strada Academiei 14, București 010014
+                </a></p>
+                <p>E-mail: <a href="mailto:octaviannica301@gmail.com">octaviannica301@gmail.com</a></p>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Trimite-ne un mesaj</h2>
+                <form action="/contact" method="POST">
+                    <div class="form-group">
+                        <label for="nume">Nume:</label>
+                        <input type="text" id="nume" name="nume" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subiect">Subiect:</label>
+                        <input type="text" id="subiect" name="subiect" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mesaj">Mesaj:</label>
+                        <textarea id="mesaj" name="mesaj" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Trimite mesajul</button>
+                </form>
+            </div>
+            
+            <div class="map-container">
+                <h2>Locația noastră</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.884301139312!2d26.0970117768872!3d44.43553547107586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFacultatea%20de%20Matematic%C4%83%20%C8%99i%20Informatic%C4%83!5e0!3m2!1sro!2sro!4v1741194819202!5m2!1sro!2sro" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <%- include('../fragmente/footer') %>
+</body>
+</html> 

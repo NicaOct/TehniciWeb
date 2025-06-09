@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <%- include('../fragmente/head') %>
+    <title><%= titlu %> | Music Master</title>
+    <style>
+        .eroare-container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .eroare-imagine {
+            max-width: 400px;
+            height: auto;
+            margin: 2rem 0;
+        }
+        .eroare-titlu {
+            color: var(--color-background2);
+            margin-bottom: 1rem;
+        }
+        .eroare-text {
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .eroare-actiuni {
+            margin-top: 2rem;
+        }
+        .eroare-actiuni a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            background-color: var(--color-background2);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .eroare-actiuni a:hover {
+            background-color: var(--color-background);
+        }
+    </style>
+</head>
+<body>
+    <%- include('../fragmente/header') %>
+
+    <main>
+        <section class="eroare-container">
+            <h1 class="eroare-titlu"><%= titlu %></h1>
+            <img src="<%= imagine %>" alt="<%= titlu %>" class="eroare-imagine">
+            <p class="eroare-text"><%= text %></p>
+            <div class="eroare-actiuni">
+                <a href="/">Pagina principală</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </section>
+    </main>
+
+    <%- include('../fragmente/footer') %>
+</body>
+</html> 
